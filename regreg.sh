@@ -165,5 +165,4 @@ zypper al cloud-regionsrv-client
 # Cleanup
 rm -f rmt-client-setup
 
-#/usr/sbin/SUSEConnect --write-config --url https://rmt-4xxdcb3b020a78abc.elb.eu-central-1.amazonaws.com
 # End
