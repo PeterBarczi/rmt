@@ -3,7 +3,7 @@
 clear
 
 # Variables
-rmt_server="rmt-4fdcb3b020a78abc.elb.eu-central-1.amazonaws.com"
+rmt_server="PUT_RMT_FQDN_HERE"
 
 # Cleanup
 registercloudguest --clean
