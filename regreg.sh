@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bascloud-regionsrv-clienth
 # This scripts runs the process of re-registeration from AWS to customer's RMT
 clear
 
@@ -156,7 +156,8 @@ curl --insecure https://$rmt_server/tools/rmt-client-setup --output rmt-client-s
 
 sh rmt-client-setup https://$rmt_server
 
-# Add lock for customized config
+# Add zypper lock for customized config
+# zypper ad cloud-regionsrv-client
 
 # Test it
 zypper ref
