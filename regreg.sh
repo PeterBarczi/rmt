@@ -156,13 +156,10 @@ curl --insecure https://$rmt_server/tools/rmt-client-setup --output rmt-client-s
 
 sh rmt-client-setup https://$rmt_server
 
-# Add zypper lock for customized config
-# zypper ad cloud-regionsrv-client
-
 # Test it
 zypper ref
 
-#
+# Add zypper lock for customized config
 zypper al cloud-regionsrv-client
 
 # Cleanup
