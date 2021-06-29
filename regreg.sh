@@ -1,4 +1,4 @@
-#!/bin/bascloud-regionsrv-clienth
+#!/bin/bash
 # This scripts runs the process of re-registeration from AWS to customer's RMT
 clear
 
