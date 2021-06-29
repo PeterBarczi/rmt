@@ -5,10 +5,6 @@ clear
 # Variables
 rmt_server="PUT_RMT_FQDN_HERE"
 
-# Cleanup
-registercloudguest --clean
-SUSEConnect --cleanup
-
 # Install regionsrv package if not present
 rpm -q cloud-regionsrv-client
 
@@ -16,6 +12,10 @@ if [ $? -eq 1 ];
    then
      zypper install -y cloud-regionsrv-client
 fi
+
+# Cleanup
+registercloudguest --clean
+SUSEConnect --cleanup
 
 # Generate /etc/regionserverclnt.cfg
 cat <<EOF > /etc/regionserverclnt.cfg
