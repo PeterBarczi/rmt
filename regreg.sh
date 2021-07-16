@@ -1,5 +1,8 @@
 #!/bin/bash
 # This scripts runs the process of re-registeration from AWS to customer's RMT
+# Hints
+# git config --global http.sslverify false
+
 clear
 
 # Variables
